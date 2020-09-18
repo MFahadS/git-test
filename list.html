@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- build:css css/main.css-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- endbuild -->
+</head>
+
+<body>
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+         <span class="navbar-toggler-icon"></span>   
+        </button>
+        <a class="navbar-brand mr-auto" href="#"><img src="img/apkadhabba.png" height="30" width="41"></a>
+<div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><span class="fa fa-home fa-lg"></span> Home</a>
+  </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About</a>
+            </li>
+                      <li class="nav-item">
+                <a class="nav-link active" href="#"><span class="fa fa-list fa-lg"></span> List</a>
+            </li>
+                      <li class="nav-item">
+                <a class="nav-link" href="#contactus"><span class="fa fa-address-card fa-lg"></span> Contact</a>
+            </li>
+            
+            
+        </ul>
+<span class="navbar-text" role="button"><a id="login-show"><span class="fa fa-sign-in">
+    Login &nbsp;/
+</span>
+</a></span>
+<span class="navbar-text" role="button"><a id="reserve-show"><span class="fa">
+     &nbsp; Signup 
+</span>
+</a></span>
+
+</div>
+    </div>
+</nav>
+    
+<div id="loginmodal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Login</h4>
+                <button id="close" type="button" class="close">
+                    &times;
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <div class="col-sm-auto">
+                            <input class="form-control" type="email" placeholder="Email">
+                        </div>
+                        <div class="col-sm-auto">
+                            <input class="form-control" type="password" placeholder="Password"> 
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check">
+                            <input class="form-check-input" id="rememberme" value="yes" type="checkbox" placeholder="Password"> 
+                            <label class="form-check-label" for="rememberme"><strong>Remember me!</strong></label>
+                        </div>   
+                        </div>                     
+                    </div>
+                    <div class="form-row form-group">
+                    <button id="close" type="button" class="btn btn-secondary ml-auto" >Cancel</button>
+                   <button class="btn btn-primary ml-1" type="submit">Sign in</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="reservemodal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Sign up</h4>
+                <button id="close" type="button" class="close">
+                    &times;
+                </button>
+            </div>
+            <div class="modal-body">
+                    <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputContact">Contact</label>
+      <input type="text" class="form-control" id="inputContact">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputname">Name</label>
+      <input type="text" class="form-control" id="inputContact">
+    </div>
+  </div>
+<div class="form-row form-group">
+                    <button id="close" type="button" class="btn btn-secondary ml-auto" >Cancel</button>
+                   <button class="btn btn-primary ml-1" type="submit">Sign up</button>
+
+                    </div>
+
+</form>
+                        
+
+            </div>
+        </div>
+    </div>
+</div>
+
+ <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6 mt-5">
+                    <h1>Khaba MArket</h1>
+                    <p>We took inspiration from the World's best cuisines, and created a platform for everyone to experience. Our effort is to provide everyone with the facilities we tend to provide.</p>
+                </div>
+                <div class="col-12 ml-2 col-sm align-self-center">
+                    <img src="img/apkadhabba.png" class="img-fluid" height="150" width="150">
+                    <span class="btn btn-dark ml-1" role="button" id="reserve-show"><a id="reserve-show"> Get your business registered!</a></span>
+                </div>
+            </div>
+        </div>
+    </header>
+<h2 class="text-center">Registered Businesses</h2>
+<div class="container"><hr></div>
+    <div class="container overflow mt-5">
+        <div class="row">
+            <div class="col-3 justify-content-center d-flex">
+                <img src="../img/uthappizza.png">
+            </div>
+            <div class="col-6">
+                <h2>restauran de poppo</h2>
+                <p>we por por haha</p>
+            </div>
+            <div class="col-3 text-center align-self-center">
+                <span class="btn btn-secondary" role="button">&nbsp;&nbsp;&nbsp;Visit&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3 justify-content-center d-flex">
+                <img src="../img/chicken-tikka.jpg" height="150" width="150">
+            </div>
+            <div class="col-6">
+                <h2>khair makdam</h2>
+                <p>delicious chicken made with butter and yougurt</p>
+            </div>
+            <div class="col-3 text-center align-self-center">
+                <span class="btn btn-secondary" role="button">&nbsp;&nbsp;&nbsp;Visit&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3 justify-content-center d-flex">
+                <img src="../img/carousal-bg.jpg" height="150" width="150">
+            </div>
+            <div class="col-6">
+                <h2>Sheikhoo restaurant</h2>
+                <p>Providing all types of desi food in our restaurant we have seperate sitting for your family</p>
+            </div>
+            <div class="col-3 text-center align-self-center">
+                <span class="btn btn-secondary" role="button">&nbsp;&nbsp;&nbsp;Visit&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3 justify-content-center d-flex">
+                <img src="../img/buffet.png">
+            </div>
+            <div class="col-6">
+                <h2>The standing buffet</h2>
+                <p>just in 1200pkr you get to eat everything you could desire in one night</p>
+            </div>
+            <div class="col-3 text-center align-self-center">
+                <span class="btn btn-secondary" role="button">&nbsp;&nbsp;&nbsp;Visit&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3 justify-content-center d-flex">
+                <img src="../img/burger-king.jpg" width="150" height="120">
+            </div>
+            <div class="col-6">
+                <h2>Burger King</h2>
+                <p>Have you ever felt like a king? try our burger king</p>
+            </div>
+            <div class="col-3 text-center align-self-center">
+                <span class="btn btn-secondary" role="button">&nbsp;&nbsp;&nbsp;Visit&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3 justify-content-center d-flex">
+                <img src="../img/cakes-n-bakes.jpg" width="150" height="150">
+            </div>
+            <div class="col-6">
+                <h2>Cakes and Bakes</h2>
+                <p>Want to taste the lipsmacking creation of ours? try us</p>
+            </div>
+            <div class="col-3 text-center align-self-center">
+                <span class="btn btn-secondary" role="button">&nbsp;&nbsp;&nbsp;Visit&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+    </div>
+
+   <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 col-sm-4">
+                    <h4 class="text-center">Contact us</h4>
+                    <form class="border border-dark p-2" id="contactus">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email">
+    <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="message">Your message</label>
+    <textarea type="text" rows="3" class="form-control" id="message" placeholder="Enter your message.."></textarea>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="contactme">
+    <label class="form-check-label" for="contactme">Contact me</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+                </div>
+                <div class="col-7 col-sm-4 text-center">
+                    <h4>Our Address</h4>
+                    <address class="mt-5">
+                      121, Clear Water Bay Road<br>
+                      Clear Water Bay, Kowloon<br>
+                      HONG KONG<br>
+                      <i class="fa fa-phone fa-lg"></i>  : +852 1234 5678<br>
+                      <i class="fa fa-fax fa-lg"></i> : +852 8765 4321<br>
+                      <i class="fa fa-envelope fa-lg"></i> : <a href="mailto:buttf99@gmail.com">KhabaMarket.food.net</a>
+                   </address>
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2020 Khaba Market</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $('#inputContact').bind('keyup paste', function(){
+        this.value = this.value.replace(/[^0-9]/g, '');
+  });
+
+});
+        
+    </script>
+    <!-- endbuild -->
+</body>
+
+</html>
